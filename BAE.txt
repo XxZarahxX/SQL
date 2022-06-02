@@ -34,6 +34,10 @@ SELECT * FROM diakok WHERE Osztaly = "11B";
 
 SELECT * FROM `diakok` WHERE Szul_ido >= ("2005-12-31");
 
+
+SELECT * FROM `diakok` WHERE Osztaly = "12A" OR "12B";
+
+
 SELECT * FROM diakok WHERE Vegzes_eve >= "2023-01-01" AND Evvegi_atlag BETWEEN "3.60" AND "4.90";
 (minta1) Írassa ki azokat a tanulókat, akik 2023-ban fognak végezni és átlaguk 3.60 és 4.90 között van
 
