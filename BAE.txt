@@ -32,3 +32,9 @@ SELECT * FROM diakok ORDER BY Szul_ido DESC;
 (minta1) Írassa ki a 11. osztályba járó diákok neveit
 SELECT * FROM diakok WHERE Osztaly = "11B";
 
+
+SELECT * FROM diakok WHERE Vegzes_eve >= "2023-01-01" AND Evvegi_atlag BETWEEN "3.60" AND "4.90";
+(minta1) Írassa ki azokat a tanulókat, akik 2023-ban fognak végezni és átlaguk 3.60 és 4.90 között van
+
+(diakok) Hányan tanulnak tanárnak nappali tagozaton?
+SELECT * FROM `tanulok` WHERE kepzesido = "nappali" AND kepesites = "Tanár";
