@@ -26,5 +26,9 @@ SELECT * FROM `diakok` WHERE Tagozat = "Angol" AND Kollegium="False";
 (minta1) Írassa ki azoknak a tanulóknak a lakhelyét akik nem vesznek igénybe kollégiumi ellátást
 SELECT * FROM `diakok` WHERE Kollegium="False";
 
+(minta1) Rendezze a névsort születés szerint növekvő sorrendbe
+SELECT * FROM diakok ORDER BY Szul_ido DESC;
 
+(minta1) Írassa ki a 11. osztályba járó diákok neveit
+SELECT * FROM diakok WHERE Osztaly = "11B";
 
