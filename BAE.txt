@@ -1,0 +1,30 @@
+(diakok) Ki az aki szegedi informatikus és esti képzésre jár?
+SELECT * FROM tanulok WHERE telepules="Szeged" AND kepzesido = "esti";
+
+(diakok) Kik azok az informatikusok vagy eladók akik kapnak ösztöndíjat?
+SELECT * FROM tanulok WHERE osztondij = "igen"
+
+(minta1) Írassa ki azokat a tanulókat, akiknek a keresztneve A-val kezdődik
+SELECT * FROM diakok WHERE Keresztnev LIKE "A%";
+
+(minta1) Írassa ki azokat, akik 2005-ben születtek és kollégisták
+SELECT * FROM diakok WHERE Lakhely="Szeged" AND Szul_ido BETWEEN ('2005-01-01') and ('2005-12-31');
+
+(diakok) Kik azok az informatikusok vagy eladók akik kapnak ösztöndíjat?
+SELECT * FROM `tanulok` WHERE osztondij = "igen";
+ 
+(minta1) Írassa ki a 11B osztályátlagát
+ SELECT avg(Evvegi_atlag) FROM diakok WHERE Osztaly = "11B";
+ 
+ 
+ (minta1) Írassa ki azokat a diákokat akik 2005-ben születtek és év végi átlaguk magasabb mint 4.20
+ SELECT * FROM diakok WHERE Szul_ido >= "2005-01-01" AND Evvegi_atlag >= "4.20";
+
+(minta1)Írassa ki, hogy azok az angol tagozatos diákok, akik nem kollégisták, milyen szakkörön vesznek részt
+SELECT * FROM `diakok` WHERE Tagozat = "Angol" AND Kollegium="False";
+
+(minta1) Írassa ki azoknak a tanulóknak a lakhelyét akik nem vesznek igénybe kollégiumi ellátást
+SELECT * FROM `diakok` WHERE Kollegium="False";
+
+
+
